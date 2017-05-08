@@ -1,0 +1,25 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+}
+
+
+<body>
+	<h2 id="app_status">Status Update...</h2>
+	<h1>Drop Zone</h1>
+	<div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)"></div>
+	<div id="Beer" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+		<img src="~/Images/beer.jpg" width="150" height="150" />
+	</div>
+	<div id="Sushi" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+		<img src="~/Images/sushi.jpg" width="150" height="150" />
+	</div>
+	<div id="PopCorn" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+		<img src="~/Images/popcorn.jpg" width="150" height="150" />
+	</div>
+	<div id="Chips" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">
+		<img src="~/Images/FrenchFries.jpg" width="150" height="150" />
+	</div>
+	<hr>
+	<button onclick="readDropZone()">Get DropZone Update</button>
+</body>
+
